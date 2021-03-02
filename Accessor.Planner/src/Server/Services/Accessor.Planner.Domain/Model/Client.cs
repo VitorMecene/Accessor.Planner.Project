@@ -21,6 +21,7 @@ namespace Accessor.Planner.Domain.Model
             Addresses = new List<Address>();
             CreatedAt = DateTime.Now;
             Activate = true;
+            Solicitations = new List<Solicitation>();
         }
 
         public string Cpf { get; private set; }
@@ -29,5 +30,7 @@ namespace Accessor.Planner.Domain.Model
         public string Phone { get; private set; }
         public UserType Type { get; private set; }
         public List<Address> Addresses { get; private set; }
+        public User User { get; private set; }
+        public List<Solicitation> Solicitations { get; private set; }
     }
 }

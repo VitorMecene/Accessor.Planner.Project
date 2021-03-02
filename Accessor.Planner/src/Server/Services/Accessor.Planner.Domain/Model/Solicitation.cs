@@ -20,6 +20,11 @@ namespace Accessor.Planner.Domain.Model
         public DateTime SolicitationEndDate { get; private set; }
         public StatusSolicitation Status { get; private set; }
         public List<Room> Rooms { get; private set; }
-
+        public Client Client { get; private set; }
+        public Guid ClientId { get; private set; }
+        public Client Accessor { get; private set; }
+        public Guid AcessorId { get; private set; }
+        public Provider Provider { get; private set; }
+        public int ProviderId { get; private set; }
     }
 }

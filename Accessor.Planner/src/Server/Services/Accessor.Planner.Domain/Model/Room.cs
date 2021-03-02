@@ -17,5 +17,7 @@ namespace Accessor.Planner.Domain.Model
 
         public string Name { get; private set; }
         public double Metreage { get; private set; }
+        public Solicitation Solicitation { get; private set; }
+        public Guid SolicitationId { get; private set; }
     }
 }
